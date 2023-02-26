@@ -16,9 +16,8 @@ jobs:
 
     - name: configure
       run: |
-         brew install leiningen
-         make test
-         make libs
-         make libs
+         sudo ./script.sh
+         sudo mv lein /usr/local/bin/
+         sudo chmod a+x /usr/local/bin/lein
 
   
