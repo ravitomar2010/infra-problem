@@ -19,6 +19,6 @@ jobs:
          ls -ltrh
          sudo chmod a+x script.sh
          sudo ./script.sh
-         lein --verion
+         lein version
 
   
