@@ -16,6 +16,7 @@ jobs:
 
     - name: configure
       run: |
+         sudo chmod a+x script.sh
          sudo ./script.sh
          sudo mv lein /usr/local/bin/
          sudo chmod a+x /usr/local/bin/lein
