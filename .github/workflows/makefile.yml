@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: configure
-       run |
+      run: |
          brew install leiningen
          make test
          make libs
