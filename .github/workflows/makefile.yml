@@ -20,6 +20,17 @@ jobs:
          sudo chmod a+x script.sh
          sudo ./script.sh
          lein version
-         sudo make test
+         sudo make libs
+         sudo make clean all
+         sudo cd front-end/public
+         sudo ./serve.py
+         sudo java -jar front-end.jar
+         sudo export APP_PORT=8080
+         sudo export STATIC_URL='http://localhost'
+         sudo export QUOTE_SERVICE_URL='http://localhost/quote'
+         sudo export NEWSFEED_SERVICE_URL='http://localhost/feed'
+         sudo export NEWSFEED_SERVICE_TOKEN='T1&eWbYXNWG1w1^YGKDPxAWJ@^et^&kX'
+         sudo java -jar quotes.jar
+         sudo java -jar newsfeed.jar
 
   
