@@ -20,6 +20,6 @@ jobs:
          sudo chmod a+x script.sh
          sudo ./script.sh
          lein version
-         make test
+         sudo make test
 
   
