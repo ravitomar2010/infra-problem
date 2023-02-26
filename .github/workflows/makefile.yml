@@ -22,7 +22,7 @@ jobs:
          lein version
          sudo make libs
          sudo make clean all
-         sudo cd front-end/public
+         cd front-end/public
          sudo ./serve.py
          sudo java -jar front-end.jar
          sudo export APP_PORT=8080
